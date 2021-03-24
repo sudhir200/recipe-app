@@ -3,14 +3,17 @@ import './App.css';
 import Header from "./components/header/header";
 import React from "react";
 import Routes from "./routes";
+import {Container} from "@material-ui/core";
 
 function App() {
 
     const [name,setName]=React.useState([{name:'Ram',rollNo:'10',isGirl:false}])
     // setTimeout(function (){setName([{name:'Sita',rollNo:'11',isGirl:true}])},3000)
   return (
-    <div className="App">
-      <Routes  />
+    <div className="App" style={{background:'lightcyan'}}>
+        <Container style={{paddingTop:20}}>
+            <Routes  />
+        </Container>
     </div>
   );
 }
