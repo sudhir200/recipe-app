@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import "./login.css"
-import {Button, Container, TextField} from "@material-ui/core";
+import {Button, Card, Container, TextField} from "@material-ui/core";
 import {addData} from "../../apiCalls/login";
 
 class Login extends Component {
@@ -14,6 +14,7 @@ class Login extends Component {
     }
 
     componentDidMount() {
+
     }
     handleChange=(event)=>
     {
@@ -28,10 +29,13 @@ class Login extends Component {
     render() {
         return (
             <div>
-                <Container style={{display:"grid"}}>
-                    <TextField value={this.state.name} name="name"  onChange={(e)=>this.handleChange(e)} />
-                    <TextField value={this.state.job} name="job" onChange={(e)=>this.handleChange(e)} />
-                    <Button variant="outlined" disabled={!this.state.name.length||!this.state.name.length} onClick={this.handleSubmit}>Submit</Button>
+                <Container >
+                    <Card style={{display:"grid"}}>
+
+                        <TextField value={this.state.name} name="name"  onChange={(e)=>this.handleChange(e)} />
+                        <TextField value={this.state.job} name="job" onChange={(e)=>this.handleChange(e)} />
+                        <Button variant="outlined" disabled={!this.state.name.length||!this.state.name.length} onClick={this.handleSubmit}>Submit</Button>
+                    </Card>
                 </Container>
 
             </div>

@@ -10,10 +10,8 @@ function App() {
     const [name,setName]=React.useState([{name:'Ram',rollNo:'10',isGirl:false}])
     // setTimeout(function (){setName([{name:'Sita',rollNo:'11',isGirl:true}])},3000)
   return (
-    <div className="App" style={{background:'lightcyan'}}>
-        <Container style={{paddingTop:20}}>
+    <div className="App" >
             <Routes  />
-        </Container>
     </div>
   );
 }
