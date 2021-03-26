@@ -6,16 +6,22 @@ export function getCountries() {
             .catch((err) => console.log(err))
     })
 }
-
-/*
-import axios from "axios";
-export function getData(retryTimes) {
+export function addData(name,job,retryTimes) {
+    var data = {
+        "name": name,
+        "job": job,
+    }
     return new Promise(function (resolve, reject) {
-        axios.get(`url`).then((res, err) => {
+        axios({
+            method: 'post',
+            url: `https:/reqres.in/api/users`,
+            headers: {},
+            data: data
+        }).then((res, err) => {
             if (res) {
                 resolve(res.data)
             } else {
-
+                console.log(err)
                 reject(err);
             }
         }).catch(function (err) {
@@ -23,8 +29,8 @@ export function getData(retryTimes) {
                 reject(err);
             } else {
                 setTimeout(() => {
-                    getData( retryTimes - 1).then(function (response) {
-                        resolve(response);
+                    addData(retryTimes - 1).then(function (response) {
+                        resolve(response.data);
                     }).catch(function (error) {
                         reject(error);
                     });
@@ -34,7 +40,3 @@ export function getData(retryTimes) {
     });
 
 }
-
-
-}
-*/

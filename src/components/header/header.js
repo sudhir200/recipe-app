@@ -39,6 +39,7 @@ class Header extends Component {
                        <div style={{padding:20,borderRadius:10,width: "auto"}}>
                            <div>
                                <Typography variant={"h6"}>{item.name}</Typography>
+                               <Typography style={{fontSize: 12}} variant={"h6"}>{item.alpha3Code}</Typography>
                                <Typography style={{fontSize: 12}}  variant={"h6"}>{item.subregion||'-'}</Typography>
                            </div>
                            <div align="left" style={{marginTop:20,display: "flex", justifyContent: "space-between"}}>
