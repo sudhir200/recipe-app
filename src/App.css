@@ -1,0 +1,22 @@
+.student-form {
+  width: 700px;
+  margin: 10px auto;
+}
+.student-form input,
+.student-form button,
+.student-form select {
+  width: 100%;
+  padding: 10px;
+}
+.display-flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.display-grid {
+  display: grid;
+}

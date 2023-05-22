@@ -1,0 +1,16 @@
+.click-photo {
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  background: var(--main-color);
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.click-photo:hover {
+  opacity: 0.6;
+}
+.image-camera-wrapper {
+  margin: 20px 0;
+}

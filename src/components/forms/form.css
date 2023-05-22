@@ -1,0 +1,22 @@
+.student-form input,
+.student-form select,
+.student-form button {
+  padding: 12px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+.student-form select,
+.student-form option {
+  cursor: pointer;
+}
+.student-form button:hover {
+  opacity: 0.6;
+}
+.student-form button {
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
+  color: white;
+  cursor: pointer;
+}
