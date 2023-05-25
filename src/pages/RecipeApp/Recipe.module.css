@@ -2,6 +2,78 @@
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    gap: 12px;
+    gap: 6px;
     margin: 10px auto;
   }
+  .recipeCardWrapper{
+    cursor: pointer;
+  }
+  .recipeCardWrapper:hover{
+    opacity: 0.6;
+  }
+.categoriesWrapper{
+  max-width: 1000px;
+  display: flex;
+  gap:10px;
+  overflow: auto;
+  margin: auto;
+  padding:15px 0 ;
+  position: sticky;
+  top:55px;
+  background: #fff;
+  padding: 12px;
+}
+.categoryItem{
+  padding:5px;
+  border-radius: 5px;
+  border:1px solid var(--chip-color);
+  color:var(--chip-color);
+  font-size: 14px;
+}
+.categoryItem:hover{
+  opacity: 0.6;
+  background: var(--chip-color);
+  color: white !important;
+}
+.recipeDetailWrapper{
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin:auto;
+  text-align: justify;
+  gap:10px;
+}
+.recipeDetailWrapper img{
+  align-self: center;
+  height: 240px;
+  width: 200px;
+   border-radius: 10px;
+}
+.ingredientMeasureWrapper div {
+  display: grid;
+  gap: 10px;
+}
+.recipeInstruction,.ingredientMeasureWrapper div span:not(:first-child) {
+  font-weight: 300;
+  font-size: 14px;
+  color:#757575;
+}
+.ingredientMeasureWrapper,.mealsTitleWrapper{
+  display: flex;
+  gap:1rem;
+  align-items: center;
+}
+.mealChip{
+  background: #b71c1c2a;
+  color: #d77171;
+  padding:6px 10px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.recipeDetailWrapper h4{
+  margin: 4px 0 ;
+}

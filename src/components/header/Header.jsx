@@ -19,12 +19,12 @@ function Header(props) {
     { link: `/recipes`, title: 'Recipes' },
   ]
   const getCurrentLinkStyle = (data) => {
-    let condition = currentLocation === data.link
+    let condition = currentLocation === data.link;
     return {
       background: condition ? `var(--main-color)` : '',
       color: condition ? `#fff` : '',
       boxShadow: condition
-        ? 'box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;'
+        ? 'rgba(0, 0, 0, 0.25) 2px 14px 28px, rgba(0, 0, 0, 0.22) 2px 10px 10px'
         : '',
     }
   }
@@ -34,7 +34,7 @@ function Header(props) {
         <ul>
           {links.map((item) => (
             <li key={item.link}>
-              <Link end={true} style={getCurrentLinkStyle(item)} to={item.link}>
+              <Link style={getCurrentLinkStyle(item)} to={item.link}>
                 {item.title}
               </Link>
             </li>

@@ -6,9 +6,25 @@ body {
 }
 :root {
   --main-color: #5252cc;
+  --chip-color: #b71d1c;
   --disabled-color: #ccc;
 }
-
+.icon-wrapper{
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icon-wrapper svg{
+  width: 20px;
+  height: 20px;
+}
+.icon-wrapper:hover{
+  background: rgba(204, 204, 204, 0.144);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -21,4 +37,10 @@ code {
 }
 .gap-2{
   gap:6px
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: var(--main-color);
 }

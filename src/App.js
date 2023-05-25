@@ -5,6 +5,7 @@ import Home from './pages/Home/Home'
 import Header from './components/header/Header'
 import StudentForm from './pages/StudentForm/StudentForm'
 import Recipes from './pages/RecipeApp/Recipes'
+import RecipeDetail from './pages/RecipeApp/RecipeDetail'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path={'/gallery'} element={<Gallery />} />
           <Route path={'/student-form'} element={<StudentForm />} />
           <Route path={'/recipes'} element={<Recipes />} />
+          <Route path={'/recipe/:id'} element={<RecipeDetail />} />
         </Routes>
       </div>
     </>

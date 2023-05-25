@@ -19,8 +19,12 @@
 }
 .mealTitle{
     font-weight: 500;
-    color:#757575;
-    font-size: 14px;
+    color:#767676;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: pre;
+    text-overflow: ellipsis;
+    max-width: 165px;
 }
 .mealSubtitle{
     font-size: 12px;
